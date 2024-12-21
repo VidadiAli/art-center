@@ -117,7 +117,7 @@ const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to={'/'} className="menu-elements">
+                    <NavLink  className="menu-elements" onClick={()=>{alert("üzərində iş gedir")}}>
                         Haqqımızda
                     </NavLink>
                 </li>

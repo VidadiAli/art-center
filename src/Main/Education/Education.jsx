@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { coursesItem } from '../../Data/coursesItem'
+import './Education.css'
 
 const Education = () => {
     const { courseUrl } = useParams()

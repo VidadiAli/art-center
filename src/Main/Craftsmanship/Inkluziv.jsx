@@ -6,7 +6,7 @@ const Inkluziv = () => {
     <div className='inkluziv'>
       <div className='first-part'>
         <h1>
-          İnkluziv Təhsil
+          İnklüziv Təhsil
         </h1>
         <p>
           İnklüziv sənətkarlıq mövzusu çox vacib bir sosial və mədəni konsepsiyadır.

@@ -1,0 +1,129 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px var(--side);
+}
+
+.education>h1 {
+    color: var(--color2);
+}
+
+.education>p {
+    width: 70%;
+    text-align: justify;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--color2);
+}
+
+.education>.education-main-part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.education>.education-main-part>h1 {
+    color: var(--color2);
+}
+
+.education>.education-main-part>p {
+    width: 70%;
+    text-align: justify;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--color2);
+}
+
+.education>.education-main-part>.education-defined {
+    padding: 20px;
+    border: 1px solid var(--color2);
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education>.education-main-part>.education-defined>button {
+    background-color: var(--color2);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.education>.education-main-part>.education-view {
+    display: flex;
+    width: 100%;
+}
+
+.education>.education-main-part>.education-view>div {
+    gap: 20px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.education>.education-main-part>.education-view>div>img {
+    width: 40%;
+    height: auto;
+}
+
+.education>.education-main-part>.education-view>div>div {
+    width: 60%;
+}
+
+
+
+@media(max-width: 1000px) {
+
+    .education>h1,
+    .education>.education-main-part>h1 {
+        font-size: 1.5rem;
+    }
+
+    .education>p,
+    .education>.education-main-part>p {
+        font-size: .85rem;
+    }
+
+    .education>.education-main-part>.education-defined>button {
+        font-size: .85rem;
+    }
+}
+
+
+@media(max-width: 600px) {
+
+    .education>h1,
+    .education>.education-main-part>h1 {
+        font-size: 1.2rem;
+    }
+
+    .education>p,
+    .education>.education-main-part>p {
+        width: 100%;
+        font-size: .7rem;
+    }
+
+    .education>.education-main-part>.education-defined {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .education>.education-main-part>.education-defined>button {
+        font-size: .7rem;
+        padding: 10px 12px;
+    }
+
+    .education>.education-main-part>.education-view>div {
+        flex-direction: column;
+    }
+
+    .education>.education-main-part>.education-view>div>img {
+        width: 100%;
+    }
+
+    .education>.education-main-part>.education-view>div>div {
+        width: 100%;
+    }
+}
