@@ -1,0 +1,101 @@
+.sale-item {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - (2*var(--side)));
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.sale-item>.sale-item-child {
+    display: flex;
+    box-shadow: 0 0 10px 1px rgb(235, 235, 235);
+    padding: 20px;
+}
+
+.sale-item>.sale-item-child>.sale-item-child-1 {
+    width: 77.5%;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.sale-item>.sale-item-child>.sale-item-child-1>.s-i-1 {
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+
+.sale-item>.sale-item-child>.sale-item-child-1>.s-i-1>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 10px 2px rgb(235, 235, 235);
+}
+
+.sale-item>.sale-item-child>.sale-item-child-1>.s-i-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 30px;
+}
+
+.sale-item>.sale-item-child>.sale-item-child-1>.s-i-2>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.sale-item>.sale-item-child>.sale-item-child-1>.s-i-2>h2{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+.sale-item>.sale-item-child>.sale-item-child-1>.s-i-2>p {
+    color: var(--color2);
+    font-size: 1.1rem;
+}
+
+.sale-item>.sale-item-child>.sale-item-child-1>.s-i-2>div>img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0 5px 10px 2px rgb(235, 235, 235);
+}
+
+.sale-item>.sale-item-child>.sale-item-child-1>.s-i-2>div>span {
+    font-weight: 900;
+    text-align: center;
+}
+
+.sale-item>.sale-item-child>.sale-item-child-2 {
+    width: 22.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px 2px rgb(235, 235, 235);
+}
+
+
+.sale-item>.sale-item-child>.sale-item-child-2>span{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.sale-item>.sale-item-child>.sale-item-child-2>a{
+    background-color: var(--color2);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    transition: .4s;
+}
+
+.sale-item>.sale-item-child>.sale-item-child-2>a:hover{
+    background-color: var(--color2Hover);
+}

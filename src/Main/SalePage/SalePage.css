@@ -1,0 +1,31 @@
+.sale-page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px var(--side);
+}
+
+.sale-page>.sale-body{
+    display: flex;
+    border: 1px solid gray;
+}
+.sale-page>.sale-body>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-right: 1px solid gray;
+    width: 25%;
+}
+.sale-page>.sale-body>ul>li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.sale-page>.sale-body>ul>li>.plus-icon{
+    padding: 5px;
+    border: 1px solid gray;
+    font-size: 2.2rem;
+}

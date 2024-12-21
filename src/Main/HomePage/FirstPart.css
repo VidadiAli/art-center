@@ -1,0 +1,177 @@
+.home-carosel {
+    width: 100%;
+    /* Konteynerin eni tam ekranı əhatə edir */
+    height: 100vh;
+    /* Tam ekran hündürlüyündədir */
+    overflow: hidden;
+    /* Scroll gizlədilir */
+    position: relative;
+    /* Absolute mövqedə olan uşaqları idarə etmək üçün */
+}
+
+.home-carosel>.home-carosel-child {
+    position: absolute;
+    /* Uşaqları mövqeləndirmək üçün */
+    top: 0;
+    /* Üstdən sıfırlanır */
+    left: -100%;
+    width: 100%;
+    /* Hər uşaq tam eni əhatə edir */
+    height: 100%;
+    /* Hər uşaq tam hündürlüyü əhatə edir */
+    display: flex;
+    /* Məzmunu yerləşdirmək üçün */
+    align-items: center;
+    /* Məzmunu şaquli mərkəzləşdirmək */
+    transition: transform .8s ease-in-out;
+    /* Axıcı hərəkət üçün keçid */
+}
+
+.home-carosel>.home-carosel-child::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 0;
+}
+
+.home-carosel>.home-carosel-child img {
+    width: 100%;
+    /* Şəkillər tam ekranı doldurur */
+    height: 100%;
+    /* Şəkillər tam hündürlükdədir */
+    position: absolute;
+    /* Digər elementlərdən asılı olmayan yerləşdirmə */
+    top: 0;
+    /* Üstdən sıfırlanır */
+    left: 0;
+    /* Soldan sıfırlanır */
+    object-fit: cover;
+    /* Şəkillər nisbətləri qoruyaraq doldurur */
+}
+
+.home-carosel>.home-carosel-child>.home-carosel-text {
+    display: flex;
+    /* Mətni düzgün yerləşdirmək üçün */
+    flex-direction: column;
+    /* Şaquli düzülüş */
+    gap: 20px;
+    /* Elementlər arasında boşluq */
+    padding: 0 var(--side);
+    /* Yan tərəflər üçün dəyişən padding */
+    z-index: 10;
+    /* Şəkil üzərində görünməsi üçün */
+    width: 70%;
+    /* Mətni ekranın yarısında göstərmək */
+}
+
+.home-carosel>.home-carosel-child>.home-carosel-text>h1 {
+    font-size: 5rem;
+    /* Başlıq üçün böyük ölçü */
+    color: white;
+    /* Ağ rəng */
+}
+
+.home-carosel>.home-carosel-child>.home-carosel-text>p {
+    color: white;
+    font-size: 1.2rem;
+    /* Ağ rəng */
+}
+
+.home-carosel>.home-carosel-child>.home-carosel-text>button {
+    width: min-content;
+    /* Məzmunun minimal eni */
+    white-space: nowrap;
+    /* Sətir keçidini deaktiv etmək */
+    padding: 13px 45px;
+    /* İç boşluq */
+    font-weight: 500;
+    /* Yazı qalınlığı */
+    border-radius: 3px;
+    /* Dairəvi kənarlar */
+    cursor: pointer;
+    /* Kliklənə bilən göstərgə */
+    color: white;
+    /* Ağ rəng */
+    position: relative;
+    /* Effekt üçün mövqe */
+    z-index: 1;
+    /* Üst səthdə görünsün */
+    background-color: var(--color2);
+    /* İkinci rəng fon */
+    transition: 0.5s;
+    /* Effekt keçidi */
+    font-size: 1.2rem;
+}
+
+.home-carosel>.home-carosel-child>.home-carosel-text>button::before {
+    content: '';
+    /* Boş məzmun */
+    position: absolute;
+    /* Mövqeləndirmə */
+    top: 0;
+    /* Üstdən sıfır */
+    left: 0%;
+    /* Soldan sıfır */
+    height: 100%;
+    /* Hündürlük tamdır */
+    transition: 0.5s;
+    /* Yumşaq keçid */
+    z-index: -1;
+    /* Fon element */
+    background-color: var(--color1);
+    /* Birinci rəng fon */
+    width: 0%;
+    /* Başlanğıcda genişlik sıfır */
+    border-radius: 3px;
+    /* Dairəvi kənarlar */
+}
+
+.home-carosel>.home-carosel-child>.home-carosel-text>button:hover::before {
+    width: 100%;
+    /* Hover zamanı tam genişlik */
+}
+
+.home-carosel>.home-carosel-child>.home-carosel-text>button:hover {
+    color: var(--color2);
+    /* Hover zamanı rəng dəyişir */
+}
+
+
+@media(max-width: 800px) {
+    .home-carosel>.home-carosel-child>.home-carosel-text {
+        width: 75%;
+    }
+
+    .home-carosel>.home-carosel-child>.home-carosel-text>h1 {
+        font-size: 3.5rem;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .home-carosel {
+        height: 70vh;
+        padding-top: 100px;
+    }
+
+    .home-carosel>.home-carosel-child>.home-carosel-text {
+        width: 100%;
+    }
+
+    .home-carosel>.home-carosel-child>.home-carosel-text>h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-carosel>.home-carosel-child>.home-carosel-text>p {
+        text-align: justify;
+        font-size: .8rem;
+    }
+
+    .home-carosel>.home-carosel-child>.home-carosel-text>button {
+        font-size: .8rem;
+    }
+}

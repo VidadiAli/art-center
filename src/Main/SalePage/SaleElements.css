@@ -1,0 +1,70 @@
+.section-of-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 20px;
+    overflow: auto;
+    max-height: calc(100vh - 110px);
+    position: relative;
+}
+
+.section-of-item>.item-head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 25px 10px;
+}
+
+.section-of-item>.item-head>p {
+    width: 75%;
+}
+
+.section-of-item>.box-of-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.section-of-item>.box-of-items>.item {
+    grid-column: 1 span;
+    width: 100%;
+    box-shadow: 0 0 10px 1px rgb(235, 235, 235);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-of-item>.box-of-items>.item>img {
+    width: 90%;
+    height: 350px;
+    object-fit: cover;
+    margin: 10px 5%;
+}
+
+.section-of-item>.box-of-items>.item>.item-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.section-of-item>.box-of-items>.item>.item-bottom>a,
+.section-of-item>.box-of-items>.item>.item-bottom>button {
+    background-color: var(--color2);
+    color: white;
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.section-of-item>.box-of-items>.item>.item-bottom>a:hover,
+.section-of-item>.box-of-items>.item>.item-bottom>button:hover {
+    background-color: var(--color2Hover);
+}
