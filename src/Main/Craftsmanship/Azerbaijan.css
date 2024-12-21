@@ -38,13 +38,13 @@
 
 .azerbaijan>.first-part>h1 {
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     width: 70%;
 }
 
 .azerbaijan>.first-part>p {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     width: 70%;
 }
 
@@ -95,7 +95,81 @@
 
 
 
+@media(max-width: 1200px) {
+    .azerbaijan>.first-part>h1 {
+        font-size: 3rem;
+    }
+
+    .azerbaijan>.first-part>p {
+        font-size: .9rem;
+    }
+
+    .azerbaijan>.second-part>ol>li>span {
+        font-size: 1.25rem;
+    }
+
+    .azerbaijan>.second-part>ol>li>p {
+        font-size: .8rem;
+    }
+}
+
+
+@media(max-width: 1000px) {
+    .azerbaijan>.first-part>h1 {
+        width: 100%;
+        font-size: 2.7rem;
+    }
+
+    .azerbaijan>.first-part>p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .azerbaijan>.second-part>ol {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .azerbaijan>.second-part>p {
+        width: 100%;
+        font-size: .8rem;
+    }
+}
+
 @media(max-width: 600px) {
+    .azerbaijan>.first-part {
+        height: 70vh;
+        gap: 20px;
+        padding-top: 50px;
+    }
+
+    .azerbaijan>.first-part>h1 {
+        font-size: 1.5rem;
+    }
+
+    .azerbaijan>.first-part>p {
+        font-size: .7rem;
+    }
+
+    .azerbaijan>.second-part {
+        padding-top: 0;
+    }
+
+    .azerbaijan>.second-part>h1 {
+        font-size: 1.3rem;
+    }
+
+    .azerbaijan>.second-part>ol {
+        grid-template-columns: 1fr;
+    }
+    .azerbaijan>.second-part>ol>li>span {
+        font-size: 1rem;
+    }
+    .azerbaijan>.second-part>ol>li>p{
+        padding: 15px 20px;
+    }
+    .azerbaijan>.second-part>p{
+        text-align: justify;
+    }
     ::marker {
         font-size: 1.25rem;
         color: var(--color2);

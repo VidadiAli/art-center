@@ -154,7 +154,7 @@
 
 @media(max-width: 600px) {
     .home-carosel {
-        height: 70vh;
+        height: 60vh;
         padding-top: 100px;
     }
 
