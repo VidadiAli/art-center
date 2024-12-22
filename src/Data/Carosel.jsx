@@ -2,7 +2,7 @@ export const carosel = [
     {
         id: "3",
         nameCarosel: 'İnklüziv Sənətkarlıq',
-        imageCarosel: 'https://github.com/web5bpm/artcenter-carousel-image/blob/main/20241215_205817_0000.jpg',
+        imageCarosel: 'https://github.com/web5bpm/artcenter-carousel-image/blob/main/20241215_213613_0000.jpg',
         textCarosel: `İnklüziv sənətkarlıq mövzusu çox vacib bir sosial və mədəni konsepsiyadır. 
         İncəsənətin və sənətkarlığın inklüziv yanaşması, cəmiyyətin hər bir üzvünün, xüsusilə də xüsusi ehtiyacı 
         olan insanların yaradıcılıq fəaliyyətlərinə qoşulmasını, bərabər imkanlara malik olmalarını təmin edir. 
@@ -15,7 +15,7 @@ export const carosel = [
         id: "2",
         nameCarosel: 'Satış',
         imageCarosel: 'https://github.com/web5bpm/artcenter-carousel-image/blob/main/20241215_202046_0000.jpg',
-        textCarosel: `Bu bölümün məqsədi, Azərbaycan sənətkarlığından çıxan fəqrli-fərqli əl işlərini geniş miqyasda 
+        textCarosel: `Bu bölmün məqsədi, Azərbaycan sənətkarlığından çıxan fəqrli-fərqli əl işlərini geniş miqyasda 
         dünyanın müxtəlif bucaqlarına çatdırmaqdır. Bu əl işləri əsrlərdir Azərbaycan sənətkarlarının 
         zəngin mədəni irsini, adət-ənənələrini və dünyagörüşlərini özündə əks etdirir. 
         Biz burada xalça toxuma, zərgərlik, əl işləri və s. kimi sahələrdən istifadə edib, bu məhsulları
@@ -25,7 +25,7 @@ export const carosel = [
     {
         id: "1",
         nameCarosel: 'Təhsil',
-        imageCarosel: 'https://github.com/web5bpm/artcenter-carousel-image/blob/main/20241215_213613_0000.jpg',
+        imageCarosel: 'https://github.com/web5bpm/artcenter-carousel-image/blob/main/20241215_205817_0000.jpg',
         textCarosel: `Artcenter Azerbaijan təhsil proqramları ilə sənətkarların bilik və bacarıqlarını 
         artırmağı hədəfləyir. Təhsil bölümü üç əsas istiqaməti əhatə edir: qısa müddətli kurslar, master 
         klasslar və inklüziv kurslar. Qısa müddətli kurslar fərdi bacarıqları inkişaf etdirmək və yeni 

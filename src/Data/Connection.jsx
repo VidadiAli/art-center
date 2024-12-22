@@ -1,8 +1,8 @@
 export const connection = [
     {
-        phone1Main: '+994504587493',
-        phone1Show: '050-458-74-93',
-        gmail: 'vidadiali@gmail.com'
+        phone1Main: '+994703100911',
+        phone1Show: '070-310-09-11',
+        gmail: ''
     },
     {
         instagram: '',
