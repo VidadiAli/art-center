@@ -84,7 +84,7 @@
     }
 
     .inkluziv>.first-part>p {
-        font-size: .75rem;
+        font-size: .825rem;
     }
 
     .inkluziv>.second-part>ol>li>span {
@@ -92,7 +92,7 @@
     }
 
     .inkluziv>.second-part>ol>li>p {
-        font-size: .75rem;
+        font-size: .825rem;
     }
 }
 
@@ -118,7 +118,7 @@
     }
 
     .inkluziv>.first-part>p {
-        font-size: .65rem;
+        font-size: .75rem;
     }
 
     .inkluziv>.second-part>ol {
@@ -126,11 +126,11 @@
     }
 
     .inkluziv>.second-part>ol>li>span {
-        font-size: .80rem;
+        font-size: .8rem;
     }
 
     .inkluziv>.second-part>ol>li>p {
-        font-size: .65rem;
+        font-size: .75rem;
         padding: 5px 22px;
     }
 }

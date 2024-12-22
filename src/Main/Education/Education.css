@@ -229,13 +229,12 @@
 
     .education>h1,
     .education>.education-main-part>h1 {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
     }
 
     .education>p,
     .education>.education-main-part>p {
         width: 100%;
-        font-size: .7rem;
     }
 
     .education>.education-main-part>.education-defined {
@@ -246,5 +245,15 @@
     .education>.education-main-part>.education-defined>button {
         font-size: .7rem;
         padding: 10px 12px;
+    }
+
+    .education>.education-main-part>.education-view>.item>.item-second-part>div>ol>li>span,
+    .education>.education-main-part>.education-view>.item>.item-second-part>div>ul>li>span {
+        font-size: 1rem;
+    }
+
+    .education>.education-main-part>.education-view>.item>.item-second-part>div>ol>li>p,
+    .education>.education-main-part>.education-view>.item>.item-second-part>div>ul>li>p {
+        font-size: .85rem;
     }
 }
