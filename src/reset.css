@@ -11,9 +11,9 @@
 }
 
 :root {
-    --color1: rgb(240, 240, 40);
-    --color2: rgb(4, 84, 4);
-    --color2Hover: rgb(5, 125, 5);
+    --color1: rgb(250, 194, 38);
+    --color2: #AF1110;
+    --color2Hover: #ff3a3a;
     --side: 8%;
 }
 

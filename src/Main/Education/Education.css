@@ -10,7 +10,7 @@
 }
 
 .education>p {
-    width: 70%;
+    width: 100%;
     text-align: justify;
     padding-bottom: 20px;
     border-bottom: 2px solid var(--color2);
@@ -28,7 +28,7 @@
 }
 
 .education>.education-main-part>p {
-    width: 70%;
+    width: 100%;
     text-align: justify;
     padding-bottom: 20px;
     border-bottom: 2px solid var(--color2);
@@ -49,8 +49,12 @@
     cursor: pointer;
     border-radius: 5px;
     padding: 10px 20px;
+    transition: .5s;
 }
 
+.education>.education-main-part>.education-defined>button:hover{
+    background-color: var(--color2Hover);
+}
 .education>.education-main-part>.education-view {
     display: flex;
     width: 100%;
