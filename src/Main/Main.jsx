@@ -6,6 +6,7 @@ import SaleItem from './SalePage/SaleItem'
 import Education from './Education/Education'
 import Inkluziv from './Craftsmanship/Inkluziv'
 import Azerbaijan from './Craftsmanship/Azerbaijan'
+import About from './About/About'
 
 const Main = () => {
     return (
@@ -18,6 +19,7 @@ const Main = () => {
                 <Route path='/type/:courseUrl' element={<Education />} />
                 <Route path='/inkluziv-art' element={<Inkluziv />} />
                 <Route path='/azerbaijan-art' element={<Azerbaijan />} />
+                <Route path='/about-us' element={<About />} />
             </Routes>
         </div>
     )
