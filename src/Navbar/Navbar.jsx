@@ -125,7 +125,7 @@ const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink className="menu-elements" to={'/about-us'} onClick={() => { callMenu() }}>
+                    <NavLink to={'/about-us'} className="menu-elements" onClick={callMenu}>
                         Haqqımızda
                     </NavLink>
                 </li>
