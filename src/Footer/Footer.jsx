@@ -46,7 +46,7 @@ const Footer = () => {
                     <a href={`https://wa.me/${connection[0].phone1Main}`} target='_blank'>
                         <FaWhatsapp className='connect-icon' />
                     </a>
-                    <a href={`mailto:${connection[0].gmail}`}>
+                    <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${connection[0].gmail}`}>
                         <MdMailOutline className='connect-icon' />
                     </a>
                 </div>
