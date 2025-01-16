@@ -43,10 +43,10 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className='connect'>
-                    <a href={connection[0].phone1Main} target='_blank'>
+                    <a href={`https://wa.me/${connection[0].phone1Main}`} target='_blank'>
                         <FaWhatsapp className='connect-icon' />
                     </a>
-                    <a href={connection[0].gmail} target='_blank'>
+                    <a href={`mailto:${connection[0].gmail}`}>
                         <MdMailOutline className='connect-icon' />
                     </a>
                 </div>
