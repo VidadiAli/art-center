@@ -30,9 +30,9 @@ const Footer = () => {
                         <FaInstagram className='sosial-icon' />
                     </a>
 
-                    <a href={connection[1].tiktok} target='_blank'>
+                    {/* <a href={connection[1].tiktok} target='_blank'>
                         <PiTiktokLogo className='sosial-icon' />
-                    </a>
+                    </a> */}
 
                     <a href={connection[1].facebook} target='_blank'>
                         <RiFacebookCircleLine className='sosial-icon' />
