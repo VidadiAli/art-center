@@ -83,6 +83,7 @@ const Navbar = () => {
                         <ul className="submenu">
                             {
                                 coursesItem.map((e) => {
+                                    // klik zamanı iki funksiya çağrılıb
                                     return <li key={e.id}>
                                         <button onClick={() => { goCourseType(e.nameOfItem), callMenu() }}>{e.nameOfItem}</button>
                                     </li>
