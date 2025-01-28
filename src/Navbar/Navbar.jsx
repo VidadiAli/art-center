@@ -16,7 +16,7 @@ const Navbar = () => {
         document.getElementsByClassName('menu')[0].classList.toggle('coming-menu')
     }
 
-    // Alt menyunun ikonunu dəyişmək funksiyası
+    // Alt menyunun ikonunu dəyişmək funksiyası ucundur
 
     const navigate1 = useNavigate();
     const navigate2 = useNavigate();
