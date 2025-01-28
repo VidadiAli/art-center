@@ -44,7 +44,7 @@ const FirstPart = () => {
 
       distance += 100;
       if (distance >= (carosel.length - 1) * 100) {
-        distance = -100; // Yenidən başlama
+        distance = -100; // Yenidən başlamaq üçün
       }
 
     }, 10000);
