@@ -9,9 +9,9 @@ const FirstPart = () => {
   const navigate = useNavigate();
 
   const mainPage = (itemName) => {
-    const url = itemName.split(" ").join("-").toLowerCase()
-    navigate(`/sale/${url}`);
-    // alert("üzərində iş gedir.")
+    // const url = itemName.split(" ").join("-").toLowerCase()
+    // navigate(`/sale/${url}`);
+    alert("üzərində iş gedir.")
   }
 
   const makeLeft = (distance) => {
