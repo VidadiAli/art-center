@@ -11,7 +11,7 @@ const FirstPart = () => {
   const mainPage = (itemName) => {
     // const url = itemName.split(" ").join("-").toLowerCase()
     // navigate(`/sale/${url}`);
-    alert("üzərində iş gedir")
+    alert("üzərində iş gedir.")
   }
 
   const makeLeft = (distance) => {
