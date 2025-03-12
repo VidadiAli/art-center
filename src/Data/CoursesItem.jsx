@@ -1,3 +1,4 @@
+// Tehsil Bolmesindeki Qisa Muddetli Kurslar Melumatlari, Sekilleri
 export const coursesItem = [
     {
         id: 1,

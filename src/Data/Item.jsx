@@ -1,3 +1,4 @@
+// Satış Bölməsindəki Məlumatlar, Qoyulan qitmətlər, Şəkillər
 export const item = [
    {
       groupId: '1',

@@ -3,6 +3,8 @@ import "./FirstPart.css";
 import { carosel } from "../../Data/Carosel";
 import { useNavigate } from "react-router-dom";
 
+// Ana sehifedeki sekillerin deyişmesi
+
 const FirstPart = () => {
   const [leftArray, setLeftArray] = useState([]);
 

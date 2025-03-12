@@ -8,6 +8,7 @@ import { CiYoutube } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa6";
 import { MdMailOutline } from "react-icons/md";
 
+// Her seyfede gorsenen bitiş bolmesi
 
 const Footer = () => {
     return (

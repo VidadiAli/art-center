@@ -1,6 +1,8 @@
 import React from 'react'
 import './About.css'
 
+// Haqqimizda Bolmesi
+
 const About = () => {
     return (
         <div className='about'>

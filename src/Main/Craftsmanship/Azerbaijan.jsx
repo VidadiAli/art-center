@@ -2,6 +2,8 @@ import React from 'react'
 import './Azerbaijan.css'
 import image1 from '../../Images/aze.jpg'
 
+// Azərbaycan Sənətkarlığı Bölməsi
+
 const Azerbaijan = () => {
   return (
     <div className='azerbaijan'>

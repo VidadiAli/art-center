@@ -1,3 +1,7 @@
+// inkulizv senetkarliq
+// Satiş navbarindaki satiş bolmesindeki yazilar
+// Tehsil bolmesindeki ilk one cixan yazilar
+// Azərbaycan Sənətkarliqi navbarinin icersidindeki basliq yazilar
 export const carosel = [
     {
         id: "3",

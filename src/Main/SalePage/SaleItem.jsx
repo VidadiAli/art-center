@@ -3,6 +3,8 @@ import './SaleItem.css'
 import { useParams } from 'react-router-dom'
 import { item } from '../../Data/Item';
 
+// Satış bölməsindəki hər hansısa mehsulua etrafli baxa click etdikde gelen ekrandaki İndi al, şekil movcud deyil bolmesi
+
 const SaleItem = () => {
 
     const { itemId, groupName } = useParams();

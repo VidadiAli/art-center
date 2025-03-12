@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import { coursesItem } from '../../Data/coursesItem'
 import './Education.css'
 
+// Ana Sehife Yazilar
+
 const Education = () => {
     const { courseUrl } = useParams()
 

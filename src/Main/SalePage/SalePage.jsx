@@ -5,6 +5,7 @@ import SaleElements from './SaleElements'
 import { FiMinus, FiPlus } from "react-icons/fi";
 import { useNavigate, useParams } from 'react-router-dom';
 
+// Satış Bölməsinə daxil olduqdan sonra Solda gələn Məhsullarımız Yazısı
 
 const SalePage = () => {
 

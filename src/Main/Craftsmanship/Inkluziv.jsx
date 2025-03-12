@@ -1,6 +1,8 @@
 import React from 'react'
 import './Inkluziv.css'
 
+// Satış bölməsindən İnkuliziv Senetkarliq 
+
 const Inkluziv = () => {
   return (
     <div className='inkluziv'>

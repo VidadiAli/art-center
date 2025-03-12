@@ -4,6 +4,8 @@ import { item } from '../../Data/Item'
 import './SaleElements.css'
 import { useNavigate } from 'react-router-dom'
 
+// Satış Bölməsindəki İndi Al, Ətrafli bax butonlari 
+
 const SaleElements = ({ saleId }) => {
 
     const navigate = useNavigate();
