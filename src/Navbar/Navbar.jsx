@@ -114,12 +114,6 @@ const Navbar = () => {
                         </ul>
                     )}
                 </li>
-
-                <li>
-                    <NavLink to={'/inkluziv-art'} className="menu-elements" onClick={callMenu}>
-                        İnklüziv Sənətkarlıq
-                    </NavLink>
-                </li>
                 <li>
                     <NavLink to={'/azerbaijan-art'} className="menu-elements" onClick={callMenu}>
                         Azərbaycan Sənətkarlığı
