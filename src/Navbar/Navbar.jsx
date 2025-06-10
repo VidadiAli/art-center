@@ -37,7 +37,7 @@ const Navbar = () => {
     const downMenu = () => {
         setChangeIcon(!true);
         setChangeIconCourse(true);
-        alert("üzərində iş gedir")
+        // alert("üzərində iş gedir.")
         callMenu()
     };
 
