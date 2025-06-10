@@ -13,7 +13,7 @@ const About = () => {
                     Artcenter Azerbaijan, Azərbaycanın zəngin mədəni irsini qorumaq, inkişaf etdirmək və dünya miqyasında tanıtmaq məqsədilə fəaliyyət göstərən bir yaradıcılıq və təhsil mərkəzidir.
                 </p>
                 <p>
-                    Gənc istedadların kəşf edilməsi və inkişafı üçün xüsusi təlimlər, ustad dərsləri və seminarlar təşkil edirik.
+                    Artcenter Azerbaijan, ölkənin hər bölgəsindən sənətkarları bir araya gətirir, onların əl işlərini təqdim edərək satışını təşkil edir. Şirkətimiz yalnız sənət əsərlərinin bazarını inkişaf etdirməkdə deyil, həmçinin sənətkarların bilik və bacarıqlarını artırmaq məqsədilə təhsil proqramları həyata keçirir.
                 </p>
                 <p>
                     Gənc istedadların kəşf edilməsi və inkişafı üçün xüsusi təlimlər, ustad dərsləri və seminarlar təşkil edirik.
