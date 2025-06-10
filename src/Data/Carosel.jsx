@@ -4,18 +4,6 @@
 // Azərbaycan Sənətkarliqi navbarinin icersidindeki basliq yazilar
 export const carosel = [
     {
-        id: "3",
-        nameCarosel: 'İnklüziv Sənətkarlıq',
-        imageCarosel: 'https://github.com/web5bpm/artcenter-carousel-image/blob/main/20241215_213613_0000.jpg',
-        textCarosel: `İnklüziv sənətkarlıq mövzusu çox vacib bir sosial və mədəni konsepsiyadır. 
-        İncəsənətin və sənətkarlığın inklüziv yanaşması, cəmiyyətin hər bir üzvünün, xüsusilə də xüsusi ehtiyacı 
-        olan insanların yaradıcılıq fəaliyyətlərinə qoşulmasını, bərabər imkanlara malik olmalarını təmin edir. 
-        Bu yanaşma, həm sosial ədalətin, həm də müxtəlif mədəniyyətlərin qorunmasının təməlini təşkil edir. 
-        Sənətkarlıq və inklüziv yanaşma, əl işləri, zərgərlik, toxuculuq, xalçaçılıq, rəssamlıq və 
-        digər sənət sahələrində fəaliyyət göstərən fərqli bacarıqlara malik şəxslərin cəmiyyətə 
-        daxil edilməsini və yaradıcılıqla məşğul olmalarını təşviq edir.`
-    },
-    {
         id: "2",
         nameCarosel: 'Satış',
         imageCarosel: 'https://github.com/web5bpm/artcenter-carousel-image/blob/main/20241215_202046_0000.jpg',
