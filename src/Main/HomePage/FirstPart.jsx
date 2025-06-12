@@ -12,8 +12,8 @@ const FirstPart = () => {
 
   const mainPage = (itemName) => {
     const url = itemName.split(" ").join("-").toLowerCase()
-    navigate(`/sale/${url}`);
-    // alert("üzərində iş gedirr")
+    navigate(`/azerbaijan-art`);
+    // alert("üzərində iş gedir")
   }
 
   const makeLeft = (distance) => {
@@ -46,7 +46,7 @@ const FirstPart = () => {
 
       distance += 100;
       if (distance >= (carosel.length - 1) * 100) {
-        distance = -100; // Yenidən başlamaq üçün
+        distance = -100; // Yenidən başlama
       }
 
     }, 10000);

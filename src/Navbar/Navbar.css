@@ -97,9 +97,9 @@ header>ul>li>ul>li:hover>button,
 header>ul>li>ul>li:hover>a {
     padding-right: 20px;
 }
-
-
-
+.submenu2{
+    width: 200px;
+}
 
 
 @media(max-width: 1200px) {

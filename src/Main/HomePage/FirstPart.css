@@ -67,9 +67,8 @@
     width: 70%;
     /* Mətni ekranın yarısında göstərmək */
 }
-
 .home-carosel>.home-carosel-child>.home-carosel-text>h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     /* Başlıq üçün böyük ölçü */
     color: white;
     /* Ağ rəng */

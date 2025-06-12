@@ -19,6 +19,9 @@ const About = () => {
                     Gənc istedadların kəşf edilməsi və inkişafı üçün xüsusi təlimlər, ustad dərsləri və seminarlar təşkil edirik.
                 </p>
                 <p>
+                    Gənc istedadların kəşf edilməsi və inkişafı üçün xüsusi təlimlər, ustad dərsləri və seminarlar təşkil edirik.
+                </p>
+                <p>
                     Artcenter Azerbaijan, ənənəvi sənət formalarını müasir yanaşmalarla birləşdirərək həm ölkə daxilində, həm də beynəlxalq səviyyədə unikal bir mədəniyyət platforması yaratmağa sadiqdir.
                 </p>
             </div>

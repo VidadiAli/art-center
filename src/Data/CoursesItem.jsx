@@ -544,8 +544,14 @@ Qeyd: Kompüter və Proqram Təminatı kursu Mədəniyyət və Sənətkarlıq ü
     },
     {
         id: 3,
-        nameOfItem: 'İnklüziv',
+        nameOfItem: 'İnklüziv Təhsil',
         textOfItem: `Artcenter Azerbaijan-ın inklüziv təhsil proqramları xüsusi ehtiyacı olan fərdlərə sənət vasitəsilə öz yaradıcılıq potensiallarını üzə çıxarmaq imkanı yaradır. Təlimlər Mədəniyyət və Sənətkarlıq üzrə Bakı Dövlət Peşə Təhsil Mərkəzi ilə əməkdaşlıq çərçivəsində təşkil olunur. Bu proqramlar, hər bir iştirakçının fərdi imkanlarını nəzərə alaraq, onları sənətin müxtəlif növləri ilə tanış etməyi və cəmiyyətə daha fəal inteqrasiya etməyi hədəfləyir. Təlimlər praktiki yönümlüdür və xüsusi ehtiyacı olan şəxslərin sənət bacarıqlarını inkişaf etdirmək üçün xüsusi metodikalardan istifadə edilir. Proqramı uğurla tamamlayanlara Mədəniyyət və Sənətkarlıq üzrə Bakı Dövlət Peşə Təhsil Mərkəzi və Artcenter Azerbaijan tərəfindən sertifikat təqdim olunur. İnklüziv təhsil sənətlə sosial bərabərliyi təşviq etməklə yanaşı, iştirakçıların şəxsi inkişafı və peşəkar karyerası üçün yeni imkanlar açır. Bu təşəbbüs inklüziv cəmiyyətin qurulmasına töhfə verməyi qarşısına məqsəd qoyur.`,
+        courses: []
+    },
+    {
+        id: 4,
+        nameOfItem: 'Peşə Təhsili',
+        textOfItem: `Məlumat Yoxdur!`,
         courses: []
     }
 ]

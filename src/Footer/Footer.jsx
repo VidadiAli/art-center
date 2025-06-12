@@ -53,9 +53,9 @@ const Footer = () => {
                 </div>
 
                 <div className='made'>
-                    <span>Copyright © 2025 Bütün hüquqlar qorunur: artcenter </span>
+                    <span>Copyright © 2025 Bütün hüquqlar qorunur: ArtCenter Azerbaijan</span>
                     <span>
-                        Developed by <a href="https://vidadiali.com" target='_blank'>vidadiali</a>
+                        Developed by <a href="https://www.instagram.com/bcccreative/" target='_blank'>BCC Creative</a>
                     </span>
                 </div>
             </div>
