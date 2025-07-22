@@ -551,7 +551,7 @@ Qeyd: Kompüter və Proqram Təminatı kursu Mədəniyyət və Sənətkarlıq ü
     {
         id: 4,
         nameOfItem: 'Peşə Təhsili',
-        textOfItem: `Məlumat Yoxdur!`,
+        textOfItem: ``,
         courses: []
     }
 ]

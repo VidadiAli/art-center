@@ -1,0 +1,25 @@
+.education{
+    padding-top: 150px;
+}
+.education .social-links span{
+    font-weight: 555;
+}
+.education .social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.education .social-links a {
+    background-color: transparent;
+    padding: 0;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 0;
+    transition: color 0.3s ease;
+    display: flex;
+}
+
+.education .social-links a:hover {
+    color: #0056b3;
+}

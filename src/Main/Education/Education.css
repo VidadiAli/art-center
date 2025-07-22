@@ -45,6 +45,7 @@
     position: sticky;
     top: 71px;
     background-color: white;
+    z-index: 9;
 }
 
 .education>.education-main-part>.education-defined>button {

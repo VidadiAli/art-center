@@ -1,0 +1,138 @@
+
+.programs-container-modern {
+    padding-top: 150px!important;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .specialties-section h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+  
+  .specialty-card {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    cursor: default;
+  }
+  
+  .specialty-card:hover {
+    transform: scale(1.02);
+    background: #eaeaea;
+  }
+  
+  .date {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .social-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .social-links a {
+    font-size: 30px;
+    color: #555;
+    transition: 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #000;
+  }
+  
+  /* ===== MEDIA QUERIES ===== */
+  
+  /* Tablet və kiçik ekranlar */
+  @media (max-width: 900px) {
+    .programs-container-modern {
+      max-width: 90%;
+      padding: 20px 15px;
+      padding-top: 100px!important;
+    }
+  
+    .header h1 {
+      font-size: 22px;
+    }
+  
+    .specialties-section h2 {
+      font-size: 20px;
+    }
+  
+    .specialties-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .specialty-card {
+      padding: 12px;
+      font-size: 15px;
+    }
+  
+    .date {
+      font-size: 16px;
+    }
+  
+    .social-links a {
+      font-size: 28px;
+    }
+  }
+  
+  /* Mobil telefonlar */
+  @media (max-width: 600px) {
+    .programs-container-modern {
+      max-width: 100%;
+      padding: 15px 10px;
+    }
+  
+    .header h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    .specialties-section h2 {
+      font-size: 18px;
+    }
+  
+    .specialties-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .specialty-card {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .date {
+      font-size: 14px;
+    }
+  
+    .social-links a {
+      font-size: 26px;
+    }
+  }
+  

@@ -1,20 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./FirstPart.css";
 import { carosel } from "../../Data/Carosel";
 import { useNavigate } from "react-router-dom";
+import homeimg from './pese.jpg';
+import { gsap } from 'gsap'; // Import GSAP
 
 // Ana sehifedeki sekillerin deyişmesi
 
 const FirstPart = () => {
   const [leftArray, setLeftArray] = useState([]);
-
   const navigate = useNavigate();
 
+  // Create refs for the elements you want to animate
+  const artCenterRef = useRef(null);
+  const paragraphRef = useRef(null);
+  const buttonRef = useRef(null);
+
   const mainPage = (itemName) => {
-    const url = itemName.split(" ").join("-").toLowerCase()
-    navigate(`/azerbaijan-art`);
+    const url = itemName.split(" ").join("-").toLowerCase();
+    navigate(`/about-us`);
     // alert("üzərində iş gedir")
-  }
+  };
 
   const makeLeft = (distance) => {
     const arr = [];
@@ -29,11 +35,8 @@ const FirstPart = () => {
         leftDistance = -100;
       }
     }
-
     setLeftArray(arr);
   };
-
-
 
   useEffect(() => {
     let distance = -100;
@@ -48,15 +51,22 @@ const FirstPart = () => {
       if (distance >= (carosel.length - 1) * 100) {
         distance = -100; // Yenidən başlama
       }
-
     }, 10000);
+
+    // GSAP Animations
+    // Create a timeline for synchronized animations
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+    tl.fromTo(artCenterRef.current, { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1 })
+      .fromTo(paragraphRef.current, { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: -0.5 }) // Stagger with previous animation
+      .fromTo(buttonRef.current, { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 1, delay: -0.5 }); // Stagger with previous animation
 
     return () => clearInterval(interval); // Təmizləmə
   }, []);
 
   return (
     <div className="home-carosel">
-      {carosel.map((e, index) => (
+      {/* {carosel.map((e, index) => (
         <div
           key={e.id}
           className="home-carosel-child"
@@ -73,7 +83,23 @@ const FirstPart = () => {
             <button onClick={() => mainPage(e.nameCarosel)}>Ətraflı Bax</button>
           </div>
         </div>
-      ))}
+      ))} */}
+
+      <div className="home-main">
+        <img src={homeimg} alt="Main Background" />
+        <div className="black"></div>
+        <div className="home-text">
+          <span ref={artCenterRef}>ArtCenter</span> {/* Attach ref */}
+          <div className="home-p-div">
+            <p ref={paragraphRef}> 
+            Artcenter Azerbaijan, Azərbaycanın zəngin mədəni irsini qorumaq, inkişaf etdirmək və dünya miqyasında tanıtmaq məqsədilə fəaliyyət göstərən yaradıcılıq və təhsil mərkəzidir.
+            </p>
+          </div>
+          <button ref={buttonRef} onClick={() => mainPage("about-us")}>
+            <a href="/about-us"></a>Ətraflı Bax
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

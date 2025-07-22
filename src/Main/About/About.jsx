@@ -1,12 +1,26 @@
-import React from 'react'
-import './About.css'
-
-// Haqqimizda Bolmesi
+import React, { useEffect, useState } from 'react';
+import './About.css';
+import { FaArrowCircleUp } from 'react-icons/fa'; // 👈 Scroll icon importu
 
 const About = () => {
+    const [showScrollButton, setShowScrollButton] = useState(false); // 👈 Scroll button state
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setShowScrollButton(window.pageYOffset > 300);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <div className='about'>
             <h1>Artcenter Azerbaijan</h1>
+
             <div className='first-part'>
                 <h1>Biz kimik?</h1>
                 <p>
@@ -19,18 +33,13 @@ const About = () => {
                     Gənc istedadların kəşf edilməsi və inkişafı üçün xüsusi təlimlər, ustad dərsləri və seminarlar təşkil edirik.
                 </p>
                 <p>
-                    Gənc istedadların kəşf edilməsi və inkişafı üçün xüsusi təlimlər, ustad dərsləri və seminarlar təşkil edirik.
-                </p>
-                <p>
                     Artcenter Azerbaijan, ənənəvi sənət formalarını müasir yanaşmalarla birləşdirərək həm ölkə daxilində, həm də beynəlxalq səviyyədə unikal bir mədəniyyət platforması yaratmağa sadiqdir.
                 </p>
             </div>
 
             <div className='second-part'>
                 <div className='missiya'>
-                    <h1>
-                        Missiyamız
-                    </h1>
+                    <h1>Missiyamız</h1>
                     <p>
                         Artcenter Azerbaijan-ın əsas missiyası, Azərbaycanın zəngin mədəniyyətini və sənət irsini qoruyub gələcək nəsillərə ötürməkdir. Bu məqsədi reallaşdırmaq üçün aşağıdakı istiqamətlərdə fəaliyyət göstəririk:
                     </p>
@@ -53,15 +62,11 @@ const About = () => {
                     </ul>
                 </div>
                 <div className='vizyon'>
-                    <h1>
-                        Vizyonumuz
-                    </h1>
+                    <h1>Vizyonumuz</h1>
                     <p>
                         Artcenter Azerbaijan olaraq, Azərbaycanın mədəni və sənət irsini gələcək nəsillər üçün qoruyub inkişaf etdirmək məqsədini mərkəzə qoyuruq.
                     </p>
-                    <h2>
-                        İnamımız budur ki:
-                    </h2>
+                    <h2>İnamımız budur ki:</h2>
                     <ul>
                         <li>
                             Azərbaycan, dünyanın sənət və mədəniyyət xəritəsində tanınan əsas mərkəzlərdən birinə çevrilə bilər
@@ -145,8 +150,15 @@ const About = () => {
                     </li>
                 </ul>
             </div>
-        </div>
-    )
-}
 
-export default About
+            {/* 👇 Scroll düyməsi */}
+            {showScrollButton && (
+                <div className="scroll-to-top" onClick={scrollToTop}>
+                    <FaArrowCircleUp className="scroll-icon" />
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default About;

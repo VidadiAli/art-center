@@ -25,6 +25,7 @@ const Footer = () => {
                 <span>R</span>
             </div>
             <div className='last-inform'>
+                <h2>Web Sayt Üzərində İş Gedir! Tezliklə Yeni Web Sayt İlə Qarşınızda Olacağıq!</h2>
                 <h2>Bizi izləyin</h2>
                 <div className='sosial'>
                     <a href={connection[1].instagram} target='_blank'>

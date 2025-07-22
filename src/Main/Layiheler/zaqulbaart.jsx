@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { coursesItem } from '../../Data/coursesItem';
 import './bcc.css';
 
 // Import icons from react-icons
 import { FaInstagram, FaFacebook, FaYoutube, FaWhatsapp } from 'react-icons/fa';
 
-const Bcc = () => { // Changed component name to Bcc (capitalized for convention)
+const zaqulbaart = () => { // Changed component name to Bcc (capitalized for convention)
     const { courseUrl } = useParams();
 
     const [display, setDisplay] = useState('inline-block');
@@ -19,7 +18,7 @@ const Bcc = () => { // Changed component name to Bcc (capitalized for convention
 
     return (
         <div className='education'>
-            <h1 style={{ display: display }}>BCC Stream</h1>
+            <h1 style={{ display: display }}>Zaqulbaart School</h1>
             <p style={{ display: display }}>
                 Artcenter Azerbaijan təhsil proqramları ilə sənətkarların bilik və bacarıqlarını artırmağı hədəfləyir.
                 Təhsil bölümü üç əsas istiqaməti əhatə edir: qısa müddətli kurslar, master klasslar və inklüziv kurslar.
@@ -50,4 +49,4 @@ const Bcc = () => { // Changed component name to Bcc (capitalized for convention
     );
 };
 
-export default Bcc;
+export default zaqulbaart;

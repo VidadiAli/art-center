@@ -1,0 +1,307 @@
+/* General Body and Container Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 140px;
+}
+
+/* Header Styling */
+.span-div {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.span-div h1 {
+  font-size: 2.5em;
+  color: #0056b3;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Video Section */
+.video-div {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.video-div video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Image Gallery */
+.studia-div {
+  padding-top: 20px;
+}
+
+.studia-child-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.studia-child {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.studia-child:hover {
+  transform: translateY(-5px);
+}
+
+.studia-child img {
+  width: 100%;
+  height: 400px; /* Fixed height for consistency */
+  object-fit: cover;
+  display: block;
+}
+
+/* Section Headers for Services and Event Types */
+.alet-span-div {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.alet-span-div span {
+  font-size: 2em;
+  color: #0056b3;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.alet-span-div span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  border-radius: 2px;
+}
+
+/* Services and Event Types Sections */
+.studia-alet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.studia-alet-child {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #007bff;
+  transition: all 0.3s ease;
+}
+
+.studia-alet-child:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  border-left-color: #0056b3;
+}
+
+.studia-alet-child span:first-child {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #0056b3;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.studia-alet-child span:last-child {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* End Call to Action/Description */
+.end-span {
+  display: block;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #666;
+  padding: 30px 40px;
+  background-color: #eaf6ff;
+  border-radius: 8px;
+  margin-top: 50px;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+    margin-top: 100px;
+  }
+
+  .span-div h1 {
+    font-size: 1.8em;
+  }
+
+  .alet-span-div span {
+    font-size: 1.6em;
+  }
+
+  .studia-child-main,
+  .studia-alet {
+    grid-template-columns: 1fr;
+  }
+
+  .studia-child img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .studia-alet-child {
+    padding: 20px;
+  }
+
+  .studia-alet-child span:first-child {
+    font-size: 1.2em;
+  }
+
+  .studia-alet-child span:last-child {
+    font-size: 0.95em;
+  }
+
+  .end-span {
+    font-size: 1em;
+    padding: 25px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .span-div h1 {
+    font-size: 1.5em;
+  }
+
+  .alet-span-div span {
+    font-size: 1.4em;
+  }
+
+  .studia-child img {
+    height: 200px;
+  } 
+  .studia-alet-child {
+    padding: 15px;
+  }
+}
+
+/* Existing CSS... */
+
+/* New Contact Section Styles */
+.contact-section {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #eee;
+}
+
+.contact-section h2 {
+  font-size: 2.2em;
+  color: #0056b3;
+  margin-bottom: 30px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between icons */
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+}
+
+.contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: translateY(-5px);
+}
+
+.contact-icon svg {
+  font-size: 3.5em; /* Size of the icon */
+  margin-bottom: 10px;
+}
+
+/* Specific icon colors on hover */
+.contact-icon.whatsapp:hover {
+  color: #25d366; /* WhatsApp green */
+}
+
+.contact-icon.instagram:hover {
+  color: #c13584; /* Instagram pink/purple */
+}
+
+/* Responsive adjustments for contact section */
+@media (max-width: 768px) {
+  .contact-section {
+    margin-top: 40px;
+    padding-top: 30px;
+  }
+
+  .contact-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .contact-icon svg {
+    font-size: 3em;
+  }
+
+  .contact-icon {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-icons {
+    flex-direction: row; /* Keep them in a row for very small screens if needed, or adjust */
+    gap: 20px;
+  }
+  .contact-icon svg {
+    font-size: 2.5em;
+  }
+}

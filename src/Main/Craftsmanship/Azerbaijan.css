@@ -51,7 +51,7 @@
 }
 
 .azerbaijan>.second-part {
-    padding: 50px var(--side);
+    padding: 20px var(--side);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -185,7 +185,7 @@
 
 /* Diğer CSS stilleriniz buraya */
 
-/* .scroll-to-top {
+.scroll-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -219,4 +219,4 @@
   .scroll-to-top:hover .scroll-icon {
     font-size: 2.4rem;
     transition: 0.3s;
-  } */
+  }

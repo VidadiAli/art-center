@@ -1,32 +1,160 @@
-.sale-page{
+.sale-page {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 80px var(--side);
+    /* `var(--header-height)` dəyişənini əsas CSS faylınızda və ya :root-da təyin edin.
+       Bu, sizin naviqasiya çubuğunuzun hündürlüyüdür. Məsələn: `--header-height: 80px;` */
+    --header-height: 80px; /* Misal üçün, öz naviqasiya hündürlüyünüzə uyğun dəyişin */
 }
 
-.sale-page>.sale-body{
+.sale-page > .sale-body {
     display: flex;
     border: 1px solid gray;
     justify-content: center;
+    /* Əlavə: sale-body flex elementi olduğu üçün, daxilindəki elementlərin scroll etməsi üçün
+       ümumi bir hündürlük və ya overflow-a ehtiyac ola bilər. */
+    align-items: flex-start; /* Ul-u yuxarıdan başlasın */
+    min-height: calc(100vh - var(--header-height) - 100px); /* Səhifənin qalan hissəsinə uyğun minimum hündürlük */
 }
-.sale-page>.sale-body>ul{
+
+.sale-page > .sale-body > ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    border-right: 1px solid gray;
-    width: 65%;
+    width: 25%;
+    background-color: #f8f8f8; /* Sidebar üçün bir fon rəngi */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); /* Yumşaq kölgə */
+
+    /* --- SABİTLƏŞDİRMƏ BURADADIR --- */
+    position: sticky; /* Elementi valideyn konteynerinə görə sabitləşdirir */
+    top: var(--header-height); /* Navbarın altında sabitlənsin */
+    height: fit-content; /* Məzmununa görə hündürlüyü təyin edir */
+    max-height: calc(100vh - var(--header-height) - 40px); /* Ekranın görünən hissəsindən artıq olmasın (yuxarı və aşağı padding nəzərə alınır) */
+    overflow-y: auto; /* Əgər kateqoriyalar çox olsa, daxili scroll olsun */
+    box-sizing: border-box; /* Padding enə daxil edilsin */
 }
-.sale-page>.sale-body>ul>li{
+
+.sale-page > .sale-body > ul > li {
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    padding: 8px 0; /* List elementləri üçün əlavə padding */
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.sale-page>.sale-body>ul>li>.plus-icon{
+.sale-page > .sale-body > ul > li:hover {
+    background-color: #e9e9e9; /* Hoverdə yüngül fon */
+    transform: translateX(5px);
+}
+
+/* <h1> elementi üçün, əgər ul-un daxilindədirsə, ona görə sabitləyin */
+.sale-page > .sale-body > ul > h1 { /* H1 artıq li-nin içində deyil, birbaşa ul-un içindədir */
+    font-size: 1.8rem;
+    color: var(--color1); /* `var(--color1)` və `var(--color2)`-ni təyin etməlisiniz */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    
+    /* --- H1-İ UL-UN İÇİNDƏ SABİTLƏŞDİRMƏ --- */
+    /* Əgər ul özü sticky-dirsə, h1-i ayrıca sticky etməyə ehtiyac yoxdur.
+       Çünki ul sürüşmürsə, onun daxilindəki elementlər də sürüşməyəcək.
+       Lakin, əgər ul daxilində scroll varsa, h1-in scroll etməməsi üçün
+       aşağıdakı stilləri əlavə etmək olar. */
+    position: sticky; /* H1 öz valideyninə (ul) görə sabit qalır */
+    top: 0; /* Valideynin ən yuxarı hissəsinə yapışır */
+    background-color: #f8f8f8; /* Arxa fon əlavə edin ki, məhsulları üstünü örtməsin */
+    z-index: 2; /* Digər li elementlərinin üstündə qalsın */
+    width: 100%; /* Tam eni tutsun */
+    box-sizing: border-box; /* Padding enə daxil edilsin */
+    padding-top: 0; /* Əgər yuxarıda padding varsa, onu tənzimləyin */
+}
+
+.sale-page > .sale-body > ul > li > .plus-icon {
     padding: 5px;
     border: 1px solid gray;
     font-size: 2.2rem;
+    color: var(--color2); /* İkon rəngi */
+}
+
+/* SaleElements komponenti üçün sağ tərəf */
+.sale-page > .sale-body > .sale-elements-container { /* SaleElements üçün xüsusi konteyner */
+    flex-grow: 1; /* Qalan bütün boşluğu tutsun */
+    padding-left: 30px; /* Sidebarla məzmun arasında boşluq */
+    /* SaleElements-in öz daxilində sürüşməsi varsa, bura overflow-y verməyin */
+}
+
+/* --- Responsivlik üçün əlavələr (əvvəlki kimi) --- */
+
+/* Planset Formaları üçün (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .sale-page {
+        padding: 20px 10px; /* Padding-i tənzimləyin */
+    }
+    .sale-page > .sale-body {
+        flex-direction: column; /* Sidebar və məzmun alt-alta düzülsün */
+        gap: 20px;
+    }
+
+    .sale-page > .sale-body > ul {
+        width: 100%; /* Sidebar tam eni tutsun */
+        position: static; /* Sabitlənmə ləğv olunsun */
+        max-height: none; /* Max hündürlük ləğv olunsun */
+        overflow-y: visible; /* Scroll ləğv olunsun */
+        display: flex; /* Kateqoriya listini yatay düzmək üçün */
+        flex-wrap: wrap; /* Sığmasalar yeni sətrə keçsinlər */
+        justify-content: center; /* Mərkəzə düzülsünlər */
+        padding: 15px;
+    }
+
+    .sale-page > .sale-body > ul > h1 {
+        width: 100%; /* Başlıq tam eni tutsun */
+        margin-bottom: 15px;
+        position: static; /* H1-in də sabitliyi ləğv olunsun */
+        background-color: transparent; /* Fonu şəffaf et */
+        z-index: auto; /* Z-indexi sıfırla */
+    }
+
+    .sale-page > .sale-body > ul > li {
+        width: auto; /* Məzmununa görə eni tənzimlənsin */
+        margin-bottom: 0;
+        margin-right: 10px; /* Elementlər arasında boşluq */
+    }
+
+    .sale-page > .sale-body > .sale-elements-container {
+        padding-left: 0;
+    }
+}
+
+/* Telefon Formaları üçün (max-width: 767px) */
+@media (max-width: 767px) {
+    .sale-page {
+        padding: 10px;
+    }
+
+    .sale-page > .sale-body {
+        gap: 15px;
+    }
+
+    .sale-page > .sale-body > ul {
+        padding: 10px;
+    }
+
+    .sale-page > .sale-body > ul > h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .sale-page > .sale-body > ul > li {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+        gap: 8px;
+    }
+
+    .sale-page > .sale-body > ul > li > .plus-icon {
+        font-size: 1rem;
+    }
 }
