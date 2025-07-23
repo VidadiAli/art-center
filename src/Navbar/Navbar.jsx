@@ -151,7 +151,7 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                    <NavLink to={"/Ixdisaslar"} className="menu-elements" onClick={downMenu}>
+                    <NavLink to={"/ixdisaslar"} className="menu-elements" onClick={downMenu}>
                         İxtisaslar
                     </NavLink>
                 </li>
