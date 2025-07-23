@@ -43,7 +43,7 @@ const Ixtisaslar = () => {
             <div className="header">
                 <h1>
                     Mədəniyyət Və Sənətkarlıq Üzrə Bakı Dövlət Peşə Təhsil Mərkəzi
-                    2025–2026cı Tədris İli Üzrə Tələbə Qəbul Edir
+                    2025–2026-CI Tədris İli Üzrə Tələbə Qəbulu Elan Edir
                 </h1>
             </div>
 

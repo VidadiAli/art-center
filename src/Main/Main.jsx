@@ -23,7 +23,7 @@ const Main = () => {
                 {/* <Route path='/sale/:itemName' element={<SalePage />} /> */}
                 {/* <Route path='/sale/:groupName/:itemId' element={<SaleItem />} /> */}
                 <Route path='/type/:courseUrl' element={<Education />} />
-                <Route path='/Ixdisaslar' element={<Ixdisaslar />} />
+                <Route path='/ixtisaslar' element={<Ixdisaslar />} />
                 <Route path='/inkluziv-art' element={<Inkluziv />} />
                 <Route path='/azerbaijan-art' element={<Azerbaijan />} />
                 <Route path='/bcc' element={<Layiheler />} /> /zaqulbaart
